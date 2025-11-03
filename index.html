@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>food ordering website</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            justify-content: center;
+        }
+        body{
+    
+    background-color: rgb(47, 3, 3);
+    max-width: 1220;
+    justify-content: center;
+
+}
+
+nav {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    justify-content: first baseline;
+}
+
+nav>ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    z-index: 3;
+    font-weight: bolder;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 5px 10px;
+
+    &:hover {
+        background-color:rgb(21, 2, 2);
+        
+    }
+}
+    .container {
+      display: flex;                
+      align-items: center;          
+      justify-content: space-between; 
+      padding: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+      gap: 40px;                    
+    }
+
+    .text-section {
+      flex: 1;                      
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .text-section h2 {
+      font-size: 32px;
+      color: #ffffff;
+      margin-bottom: 15px;
+    }
+
+    .text-section p {
+      font-size: 20px;
+      color: #fdf4f4;
+      line-height: 1.6;
+    }
+
+    .image-section {
+      flex: 1;
+      text-align: right;
+    }
+
+    .image-section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 24px;  
+      height: 400px;      
+    }
+
+    /* Responsive design for smaller screens */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;    
+        text-align: center;
+      }
+
+      .image-section {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+    <header>
+    <nav>
+        <img style="width:70px;height:70px; margin-left: 63px;"  src="chef.jpg" alt="">
+     <ul> 
+            <li><a href="#">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Contact Us</a></li>
+     </ul>
+    </nav>
+
+    </header>
+  <div class="container">
+    <div class="text-section">
+      <h2>NOURISH YOUR BODY, DELIGHT YOUR TASTE BUDS.</h2>
+      <p>Quality ingredients, delicious results. Order in and enjoy the freshness!</p>
+    </div>
+    <div class="image-section">
+      <img src="food.jpg" alt="Delicious healthy meal">
+    </div>
+  </div>
+</body>
+</html>
+
+    
